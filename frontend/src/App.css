@@ -1,5 +1,5 @@
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: system-ui, sans-serif;
@@ -12,7 +12,7 @@ h1 {
 .controls {
   display: flex;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -34,6 +34,21 @@ h1 {
 .controls button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.date-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.date-label input[type="date"] {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 .error {
@@ -101,3 +116,5 @@ a:hover {
 .importance-medium { background: #fff3e0; color: #e65100; }
 .importance-high { background: #fce4ec; color: #c62828; }
 .importance-critical { background: #c62828; color: #fff; }
+
+.file-type { background: #e3f2fd; color: #1565c0; }
