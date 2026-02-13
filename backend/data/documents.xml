@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents>
+  <document>
+    <title>Gada pārskats 2023</title>
+    <description>Dokuments nr. 1: gada pārskats — sagatavots 2023. gadā.</description>
+    <responsible_unit>IT nodaļa</responsible_unit>
+    <created_at>2023-07-27</created_at>
+    <url>https://example.com/docs/0001.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>14</reading_time_minutes>
+    <importance>zems</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>IT infrastruktūras audits 2019</title>
+    <description>Dokuments nr. 2: it infrastruktūras audits — sagatavots 2019. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2020-07-07</created_at>
+    <url>https://example.com/docs/0002.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>72</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Gada pārskats 2025</title>
+    <description>Dokuments nr. 3: gada pārskats — sagatavots 2025. gadā.</description>
+    <responsible_unit>IT nodaļa</responsible_unit>
+    <created_at>2025-09-13</created_at>
+    <url>https://example.com/docs/0003.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>9</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Projekta plāns 2019</title>
+    <description>Dokuments nr. 4: projekta plāns — sagatavots 2019. gadā.</description>
+    <responsible_unit>IT nodaļa</responsible_unit>
+    <created_at>2020-08-05</created_at>
+    <url>https://example.com/docs/0004.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>102</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Apmācību programma 2026</title>
+    <description>Dokuments nr. 5: apmācību programma — sagatavots 2026. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2024-04-06</created_at>
+    <url>https://example.com/docs/0005.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>99</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Drošības politika 2024</title>
+    <description>Dokuments nr. 6: drošības politika — sagatavots 2024. gadā.</description>
+    <responsible_unit>Finanšu departaments</responsible_unit>
+    <created_at>2023-06-20</created_at>
+    <url>https://example.com/docs/0006.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>88</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2019</title>
+    <description>Dokuments nr. 7: iepirkumu procedūra — sagatavots 2019. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2019-12-05</created_at>
+    <url>https://example.com/docs/0007.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>85</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>iekšējs</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>IT infrastruktūras audits 2025</title>
+    <description>Dokuments nr. 8: it infrastruktūras audits — sagatavots 2025. gadā.</description>
+    <responsible_unit>IT nodaļa</responsible_unit>
+    <created_at>2024-02-14</created_at>
+    <url>https://example.com/docs/0008.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>74</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Apmācību programma 2020</title>
+    <description>Dokuments nr. 9: apmācību programma — sagatavots 2020. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2019-02-22</created_at>
+    <url>https://example.com/docs/0009.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>30</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Datu aizsardzības noteikumi 2022</title>
+    <description>Dokuments nr. 10: datu aizsardzības noteikumi — sagatavots 2022. gadā.</description>
+    <responsible_unit>Projektu vadība</responsible_unit>
+    <created_at>2020-12-28</created_at>
+    <url>https://example.com/docs/0010.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>69</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Gada pārskats 2019</title>
+    <description>Dokuments nr. 11: gada pārskats — sagatavots 2019. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2024-02-13</created_at>
+    <url>https://example.com/docs/0011.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>3</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Klientu aptaujas rezultāti 2025</title>
+    <description>Dokuments nr. 12: klientu aptaujas rezultāti — sagatavots 2025. gadā.</description>
+    <responsible_unit>Finanšu departaments</responsible_unit>
+    <created_at>2020-03-20</created_at>
+    <url>https://example.com/docs/0012.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>66</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Klientu aptaujas rezultāti 2019</title>
+    <description>Dokuments nr. 13: klientu aptaujas rezultāti — sagatavots 2019. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2019-10-28</created_at>
+    <url>https://example.com/docs/0013.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>4</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Gada pārskats 2024</title>
+    <description>Dokuments nr. 14: gada pārskats — sagatavots 2024. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2022-11-27</created_at>
+    <url>https://example.com/docs/0014.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>82</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>konfidenciāls</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Risku novērtējums 2021</title>
+    <description>Dokuments nr. 15: risku novērtējums — sagatavots 2021. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2021-08-20</created_at>
+    <url>https://example.com/docs/0015.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>106</reading_time_minutes>
+    <importance>zems</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Budžeta tāme 2023</title>
+    <description>Dokuments nr. 16: budžeta tāme — sagatavots 2023. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2023-02-18</created_at>
+    <url>https://example.com/docs/0016.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>69</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Stratēģiskais plāns 2025</title>
+    <description>Dokuments nr. 17: stratēģiskais plāns — sagatavots 2025. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2019-09-12</created_at>
+    <url>https://example.com/docs/0017.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>59</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iekšējā audita ziņojums 2026</title>
+    <description>Dokuments nr. 18: iekšējā audita ziņojums — sagatavots 2026. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2023-10-24</created_at>
+    <url>https://example.com/docs/0018.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>21</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>iekšējs</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2020</title>
+    <description>Dokuments nr. 19: iepirkumu procedūra — sagatavots 2020. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2021-07-10</created_at>
+    <url>https://example.com/docs/0019.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>12</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Komunikācijas stratēģija 2024</title>
+    <description>Dokuments nr. 20: komunikācijas stratēģija — sagatavots 2024. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2023-06-19</created_at>
+    <url>https://example.com/docs/0020.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>65</reading_time_minutes>
+    <importance>zems</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Stratēģiskais plāns 2019</title>
+    <description>Dokuments nr. 21: stratēģiskais plāns — sagatavots 2019. gadā.</description>
+    <responsible_unit>Juridiskā nodaļa</responsible_unit>
+    <created_at>2022-01-03</created_at>
+    <url>https://example.com/docs/0021.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>11</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2021</title>
+    <description>Dokuments nr. 22: iepirkumu procedūra — sagatavots 2021. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2024-06-05</created_at>
+    <url>https://example.com/docs/0022.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>94</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Risku novērtējums 2026</title>
+    <description>Dokuments nr. 23: risku novērtējums — sagatavots 2026. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2023-06-10</created_at>
+    <url>https://example.com/docs/0023.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>108</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>IT infrastruktūras audits 2020</title>
+    <description>Dokuments nr. 24: it infrastruktūras audits — sagatavots 2020. gadā.</description>
+    <responsible_unit>Finanšu departaments</responsible_unit>
+    <created_at>2023-01-17</created_at>
+    <url>https://example.com/docs/0024.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>47</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Drošības politika 2026</title>
+    <description>Dokuments nr. 25: drošības politika — sagatavots 2026. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2021-02-27</created_at>
+    <url>https://example.com/docs/0025.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>49</reading_time_minutes>
+    <importance>zems</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2023</title>
+    <description>Dokuments nr. 26: iepirkumu procedūra — sagatavots 2023. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2025-04-08</created_at>
+    <url>https://example.com/docs/0026.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>48</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Komunikācijas stratēģija 2023</title>
+    <description>Dokuments nr. 27: komunikācijas stratēģija — sagatavots 2023. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2019-08-13</created_at>
+    <url>https://example.com/docs/0027.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>7</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Datu aizsardzības noteikumi 2024</title>
+    <description>Dokuments nr. 28: datu aizsardzības noteikumi — sagatavots 2024. gadā.</description>
+    <responsible_unit>Juridiskā nodaļa</responsible_unit>
+    <created_at>2023-12-30</created_at>
+    <url>https://example.com/docs/0028.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>108</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Risku novērtējums 2026</title>
+    <description>Dokuments nr. 29: risku novērtējums — sagatavots 2026. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2022-10-13</created_at>
+    <url>https://example.com/docs/0029.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>24</reading_time_minutes>
+    <importance>zems</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Kvalitātes vadības sistēma 2026</title>
+    <description>Dokuments nr. 30: kvalitātes vadības sistēma — sagatavots 2026. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2024-05-09</created_at>
+    <url>https://example.com/docs/0030.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>61</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Komunikācijas stratēģija 2022</title>
+    <description>Dokuments nr. 31: komunikācijas stratēģija — sagatavots 2022. gadā.</description>
+    <responsible_unit>Finanšu departaments</responsible_unit>
+    <created_at>2024-03-13</created_at>
+    <url>https://example.com/docs/0031.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>91</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Drošības politika 2020</title>
+    <description>Dokuments nr. 32: drošības politika — sagatavots 2020. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2022-03-13</created_at>
+    <url>https://example.com/docs/0032.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>54</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>konfidenciāls</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Apmācību programma 2019</title>
+    <description>Dokuments nr. 33: apmācību programma — sagatavots 2019. gadā.</description>
+    <responsible_unit>Projektu vadība</responsible_unit>
+    <created_at>2020-11-05</created_at>
+    <url>https://example.com/docs/0033.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>6</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Personāla rokasgrāmata 2026</title>
+    <description>Dokuments nr. 34: personāla rokasgrāmata — sagatavots 2026. gadā.</description>
+    <responsible_unit>Projektu vadība</responsible_unit>
+    <created_at>2021-07-07</created_at>
+    <url>https://example.com/docs/0034.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>68</reading_time_minutes>
+    <importance>zems</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Apmācību programma 2023</title>
+    <description>Dokuments nr. 35: apmācību programma — sagatavots 2023. gadā.</description>
+    <responsible_unit>Juridiskā nodaļa</responsible_unit>
+    <created_at>2024-11-02</created_at>
+    <url>https://example.com/docs/0035.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>82</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Projekta plāns 2019</title>
+    <description>Dokuments nr. 36: projekta plāns — sagatavots 2019. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2023-11-21</created_at>
+    <url>https://example.com/docs/0036.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>20</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Komunikācijas stratēģija 2022</title>
+    <description>Dokuments nr. 37: komunikācijas stratēģija — sagatavots 2022. gadā.</description>
+    <responsible_unit>Juridiskā nodaļa</responsible_unit>
+    <created_at>2019-06-03</created_at>
+    <url>https://example.com/docs/0037.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>117</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Komunikācijas stratēģija 2019</title>
+    <description>Dokuments nr. 38: komunikācijas stratēģija — sagatavots 2019. gadā.</description>
+    <responsible_unit>Finanšu departaments</responsible_unit>
+    <created_at>2023-08-16</created_at>
+    <url>https://example.com/docs/0038.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>71</reading_time_minutes>
+    <importance>zems</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Risku novērtējums 2025</title>
+    <description>Dokuments nr. 39: risku novērtējums — sagatavots 2025. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2021-01-31</created_at>
+    <url>https://example.com/docs/0039.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>15</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2019</title>
+    <description>Dokuments nr. 40: iepirkumu procedūra — sagatavots 2019. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2020-09-18</created_at>
+    <url>https://example.com/docs/0040.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>29</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>iekšējs</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Klientu aptaujas rezultāti 2022</title>
+    <description>Dokuments nr. 41: klientu aptaujas rezultāti — sagatavots 2022. gadā.</description>
+    <responsible_unit>Kvalitātes nodaļa</responsible_unit>
+    <created_at>2019-11-12</created_at>
+    <url>https://example.com/docs/0041.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>112</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Datu aizsardzības noteikumi 2020</title>
+    <description>Dokuments nr. 42: datu aizsardzības noteikumi — sagatavots 2020. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2020-05-14</created_at>
+    <url>https://example.com/docs/0042.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>119</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Iepirkumu procedūra 2024</title>
+    <description>Dokuments nr. 43: iepirkumu procedūra — sagatavots 2024. gadā.</description>
+    <responsible_unit>Mārketinga nodaļa</responsible_unit>
+    <created_at>2023-01-25</created_at>
+    <url>https://example.com/docs/0043.docx</url>
+    <file_type>docx</file_type>
+    <reading_time_minutes>50</reading_time_minutes>
+    <importance>zems</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Apmācību programma 2024</title>
+    <description>Dokuments nr. 44: apmācību programma — sagatavots 2024. gadā.</description>
+    <responsible_unit>IT nodaļa</responsible_unit>
+    <created_at>2021-04-23</created_at>
+    <url>https://example.com/docs/0044.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>24</reading_time_minutes>
+    <importance>kritisks</importance>
+    <category>iekšējs</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Budžeta tāme 2019</title>
+    <description>Dokuments nr. 45: budžeta tāme — sagatavots 2019. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2019-12-20</created_at>
+    <url>https://example.com/docs/0045.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>5</reading_time_minutes>
+    <importance>zems</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Datu aizsardzības noteikumi 2025</title>
+    <description>Dokuments nr. 46: datu aizsardzības noteikumi — sagatavots 2025. gadā.</description>
+    <responsible_unit>Juridiskā nodaļa</responsible_unit>
+    <created_at>2023-07-16</created_at>
+    <url>https://example.com/docs/0046.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>8</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>publisks</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Risku novērtējums 2020</title>
+    <description>Dokuments nr. 47: risku novērtējums — sagatavots 2020. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2019-06-18</created_at>
+    <url>https://example.com/docs/0047.xlsx</url>
+    <file_type>xlsx</file_type>
+    <reading_time_minutes>57</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Stratēģiskais plāns 2025</title>
+    <description>Dokuments nr. 48: stratēģiskais plāns — sagatavots 2025. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2020-08-08</created_at>
+    <url>https://example.com/docs/0048.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>87</reading_time_minutes>
+    <importance>zems</importance>
+    <category>ierobežotas pieejamības</category>
+    <active>nē</active>
+  </document>
+  <document>
+    <title>Kvalitātes vadības sistēma 2025</title>
+    <description>Dokuments nr. 49: kvalitātes vadības sistēma — sagatavots 2025. gadā.</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2021-07-26</created_at>
+    <url>https://example.com/docs/0049.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>8</reading_time_minutes>
+    <importance>zems</importance>
+    <category>publisks</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Personāla rokasgrāmata 2022</title>
+    <description>Dokuments nr. 50: personāla rokasgrāmata — sagatavots 2022. gadā.</description>
+    <responsible_unit>Personāla nodaļa</responsible_unit>
+    <created_at>2025-04-01</created_at>
+    <url>https://example.com/docs/0050.pdf</url>
+    <file_type>pdf</file_type>
+    <reading_time_minutes>101</reading_time_minutes>
+    <importance>augsts</importance>
+    <category>konfidenciāls</category>
+    <active>nē</active>
+  </document>
+</documents>

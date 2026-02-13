@@ -1,12 +1,19 @@
-from datetime import datetime
+from datetime import date
+
 from pydantic import BaseModel
 
 
 class DocumentBase(BaseModel):
-    filename: str
-    title: str | None = None
-    author: str | None = None
+    title: str
     description: str | None = None
+    responsible_unit: str
+    created_at: date
+    url: str
+    file_type: str
+    reading_time_minutes: int
+    importance: str
+    category: str
+    active: bool
 
 
 class DocumentCreate(DocumentBase):
@@ -15,6 +22,5 @@ class DocumentCreate(DocumentBase):
 
 class DocumentRead(DocumentBase):
     id: int
-    imported_at: datetime
 
     model_config = {"from_attributes": True}
