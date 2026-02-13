@@ -69,8 +69,20 @@ SAMPLE_XML = """\
     <url>https://example.com/docs/g.xlsx</url>
     <file_type>xlsx</file_type>
     <reading_time_minutes>5</reading_time_minutes>
-    <importance>augsts</importance>
+    <importance>kritisks</importance>
     <category>iekšējs</category>
+    <active>jā</active>
+  </document>
+  <document>
+    <title>Delta dokuments</title>
+    <description>Apraksts D</description>
+    <responsible_unit>Drošības nodaļa</responsible_unit>
+    <created_at>2024-03-10</created_at>
+    <url>https://example.com/docs/d.html</url>
+    <file_type>html</file_type>
+    <reading_time_minutes>15</reading_time_minutes>
+    <importance>vidējs</importance>
+    <category>konfidenciāls</category>
     <active>jā</active>
   </document>
 </documents>
@@ -99,7 +111,7 @@ class TestGetDocuments:
         _seed_db()
         resp = client.get("/api/documents")
         assert resp.status_code == 200
-        assert len(resp.json()) == 3
+        assert len(resp.json()) == 4
 
     def test_empty_db_returns_empty_list(self):
         resp = client.get("/api/documents")
@@ -110,7 +122,7 @@ class TestGetDocuments:
         _seed_db()
         resp = client.get("/api/documents", params={"active": "true"})
         data = resp.json()
-        assert len(data) == 2
+        assert len(data) == 3
         assert all(d["active"] is True for d in data)
 
     def test_filter_by_active_false(self):
@@ -124,8 +136,8 @@ class TestGetDocuments:
         _seed_db()
         resp = client.get("/api/documents", params={"importance": "high"})
         data = resp.json()
-        assert len(data) == 2
-        assert all(d["importance"] == "high" for d in data)
+        assert len(data) == 1
+        assert data[0]["importance"] == "high"
 
     def test_filter_by_category(self):
         _seed_db()
@@ -138,7 +150,7 @@ class TestGetDocuments:
         _seed_db()
         resp = client.get(
             "/api/documents",
-            params={"importance": "high", "active": "true"},
+            params={"category": "internal", "active": "true"},
         )
         assert len(resp.json()) == 2
 
@@ -173,7 +185,7 @@ class TestGetDocuments:
         _seed_db()
         all_docs = client.get("/api/documents").json()
         offset_docs = client.get("/api/documents", params={"offset": 1}).json()
-        assert len(offset_docs) == 2
+        assert len(offset_docs) == 3
         assert offset_docs[0]["id"] == all_docs[1]["id"]
 
     def test_documents_have_id(self):
@@ -183,8 +195,95 @@ class TestGetDocuments:
 
     def test_filter_no_match_returns_empty(self):
         _seed_db()
-        resp = client.get("/api/documents", params={"importance": "critical"})
+        resp = client.get("/api/documents", params={"importance": "nonexistent"})
         assert resp.json() == []
+
+
+class TestImportanceSorting:
+    """Svarīguma kārtošana pēc loģiskās prioritātes: low < medium < high < critical."""
+
+    def test_importance_sort_asc(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents", params={"sort": "importance", "order": "asc"}
+        ).json()
+        levels = [d["importance"] for d in data]
+        assert levels == ["low", "medium", "high", "critical"]
+
+    def test_importance_sort_desc(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents", params={"sort": "importance", "order": "desc"}
+        ).json()
+        levels = [d["importance"] for d in data]
+        assert levels == ["critical", "high", "medium", "low"]
+
+
+class TestDateRangeFiltering:
+    def test_created_from(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents", params={"created_from": "2024-01-01"}
+        ).json()
+        assert all(d["created_at"] >= "2024-01-01" for d in data)
+        assert len(data) == 3
+
+    def test_created_to(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents", params={"created_to": "2024-01-01"}
+        ).json()
+        assert all(d["created_at"] <= "2024-01-01" for d in data)
+        assert len(data) == 1
+
+    def test_date_range_both(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents",
+            params={"created_from": "2024-01-01", "created_to": "2024-12-31"},
+        ).json()
+        assert len(data) == 2
+        assert all("2024-01-01" <= d["created_at"] <= "2024-12-31" for d in data)
+
+    def test_date_range_no_match(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents",
+            params={"created_from": "2026-01-01", "created_to": "2026-12-31"},
+        ).json()
+        assert data == []
+
+    def test_invalid_date_format_returns_400(self):
+        _seed_db()
+        resp = client.get("/api/documents", params={"created_from": "01-2024-15"})
+        assert resp.status_code == 400
+        assert "created_from" in resp.json()["detail"]
+
+    def test_invalid_date_to_returns_400(self):
+        _seed_db()
+        resp = client.get("/api/documents", params={"created_to": "not-a-date"})
+        assert resp.status_code == 400
+        assert "created_to" in resp.json()["detail"]
+
+
+class TestValidation:
+    def test_invalid_sort_field_returns_400(self):
+        _seed_db()
+        resp = client.get("/api/documents", params={"sort": "nonexistent"})
+        assert resp.status_code == 400
+        assert "nonexistent" in resp.json()["detail"]
+
+    def test_invalid_order_returns_400(self):
+        _seed_db()
+        resp = client.get("/api/documents", params={"order": "random"})
+        assert resp.status_code == 400
+
+    def test_sort_by_active_works(self):
+        _seed_db()
+        data = client.get(
+            "/api/documents", params={"sort": "active", "order": "asc"}
+        ).json()
+        assert data[0]["active"] is False
 
 
 class TestImportEndpoint:
