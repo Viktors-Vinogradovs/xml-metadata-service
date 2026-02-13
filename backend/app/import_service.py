@@ -4,7 +4,7 @@ import httpx
 from sqlalchemy.orm import Session
 
 from app.models import Document
-from app.parser import parse_xml
+from app.parser import parse_documents_xml
 
 
 def load_remote_xml(remote_url: str, timeout: float = 10.0) -> str:
@@ -16,10 +16,11 @@ def load_remote_xml(remote_url: str, timeout: float = 10.0) -> str:
 
 def import_documents(xml_text: str, db: Session) -> int:
     """Parsē XML un veic upsert pēc URL; atgriež importēto dokumentu skaitu."""
-    parsed = parse_xml(xml_text)
+    parsed = parse_documents_xml(xml_text)
     count = 0
 
-    for data in parsed:
+    for doc_data in parsed:
+        data = doc_data.model_dump()
         existing = db.query(Document).filter(Document.url == data["url"]).first()
 
         if existing:

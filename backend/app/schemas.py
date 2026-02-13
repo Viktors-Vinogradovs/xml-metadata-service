@@ -20,7 +20,7 @@ class DocumentCreate(DocumentBase):
     pass
 
 
-class DocumentRead(DocumentBase):
+class DocumentOut(DocumentBase):
     id: int
 
     model_config = {"from_attributes": True}

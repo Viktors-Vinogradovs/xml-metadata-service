@@ -4,6 +4,8 @@ import xml.etree.ElementTree as ET
 from datetime import date
 from pathlib import Path
 
+from app.schemas import DocumentCreate
+
 # --- Kartēšanas vārdnīcas: latviešu XML vērtības → kanoniskās DB vērtības ---
 
 IMPORTANCE_MAP: dict[str, str] = {
@@ -47,52 +49,53 @@ def _map_enum(value: str, mapping: dict, field_name: str):
     return mapping[value]
 
 
-def parse_document(elem: ET.Element) -> dict:
-    """Parsē vienu <document> elementu; atgriež vārdnīcu ar kanoniskām vērtībām."""
+def _parse_document(elem: ET.Element) -> DocumentCreate:
+    """Parsē vienu <document> elementu; atgriež DocumentCreate ar kanoniskām vērtībām."""
     file_type = _required_text(elem, "file_type")
     if file_type not in VALID_FILE_TYPES:
         raise ValueError(
             f"Nederīgs file_type: '{file_type}'. "
-            f"Atļautie: {', '.join(VALID_FILE_TYPES)}"
+            f"Atļautie: {', '.join(sorted(VALID_FILE_TYPES))}"
         )
 
     reading_time = _required_text(elem, "reading_time_minutes")
     if not reading_time.isdigit():
         raise ValueError(f"reading_time_minutes nav vesels skaitlis: '{reading_time}'")
 
-    return {
-        "title": _required_text(elem, "title"),
-        "description": _required_text(elem, "description"),
-        "responsible_unit": _required_text(elem, "responsible_unit"),
-        "created_at": date.fromisoformat(_required_text(elem, "created_at")),
-        "url": _required_text(elem, "url"),
-        "file_type": file_type,
-        "reading_time_minutes": int(reading_time),
-        "importance": _map_enum(
+    return DocumentCreate(
+        title=_required_text(elem, "title"),
+        description=_required_text(elem, "description"),
+        responsible_unit=_required_text(elem, "responsible_unit"),
+        created_at=date.fromisoformat(_required_text(elem, "created_at")),
+        url=_required_text(elem, "url"),
+        file_type=file_type,
+        reading_time_minutes=int(reading_time),
+        importance=_map_enum(
             _required_text(elem, "importance"), IMPORTANCE_MAP, "importance"
         ),
-        "category": _map_enum(
+        category=_map_enum(
             _required_text(elem, "category"), CATEGORY_MAP, "category"
         ),
-        "active": _map_enum(
+        active=_map_enum(
             _required_text(elem, "active"), ACTIVE_MAP, "active"
         ),
-    }
+    )
 
 
-def parse_xml(source: str | Path) -> list[dict]:
-    """Parsē XML failu vai tekstu; atgriež dokumentu sarakstu."""
-    if isinstance(source, Path):
-        tree = ET.parse(source)
-        root = tree.getroot()
-    else:
-        root = ET.fromstring(source)
+def parse_documents_xml(xml_text: str) -> list[DocumentCreate]:
+    """Parsē XML tekstu; atgriež DocumentCreate sarakstu."""
+    root = ET.fromstring(xml_text)
 
     documents = []
     for i, elem in enumerate(root.findall("document"), start=1):
         try:
-            documents.append(parse_document(elem))
+            documents.append(_parse_document(elem))
         except ValueError as e:
             raise ValueError(f"Kļūda dokumentā #{i}: {e}") from e
 
     return documents
+
+
+def parse_xml_file(path: Path) -> list[DocumentCreate]:
+    """Parsē XML failu no diska."""
+    return parse_documents_xml(path.read_text(encoding="utf-8"))
