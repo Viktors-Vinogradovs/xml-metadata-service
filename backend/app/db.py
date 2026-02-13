@@ -22,4 +22,3 @@ def init_db():
     from app import models  # noqa: F401 — importē, lai reģistrētu modeļus
 
     Base.metadata.create_all(bind=engine)
-``
